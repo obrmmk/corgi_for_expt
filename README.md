@@ -6,7 +6,7 @@ from corgi import start_corgi as corgi
 corgi()
 ```
 
-### モデル比較
+### モデル
 |                    | mT5_DS_B_BASE | mT5_DS_B_BASE+expt     | mT5_DS_B_BASE_tuned_by_expt  | 
 | :------------------: | :-------------: | :---------------------: | :---------------------------: | 
 | コマンド          | start_corgi   | start_BASE_expt_corgi | start_tuned_by_expt_corgi   | 
