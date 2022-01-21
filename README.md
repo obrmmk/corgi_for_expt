@@ -2,7 +2,7 @@
 
 ### corgiの呼び出し
 ```
-from corgi_for_expt import start_corgi as corgi
+from corgi_for_expt import start_BASE_corgi as corgi
 corgi()
 ```
 
