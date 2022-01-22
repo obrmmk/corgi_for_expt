@@ -7,10 +7,10 @@ corgi()
 ```
 
 ### モデル概要
-|                    | mT5_DS_B_BASE | mT5_DS_B_BASE+expt     | mT5_DS_B_BASE_tuned_by_expt  | 
-| :------------------: | :-------------: | :---------------------: | :---------------------------: | 
-| コマンド          | start_BASE_corgi   | start_BASE_expt_corgi | start_tuned_by_expt_corgi   | 
-| 事前学習済みモデル | mT5-small     | mT5-small             | mT5_DS_B_BASE               | 
-| コーパス          | DS_B_BASE.tsv | DS_B_BASE+expt.tsv    | expt.tsv          | 
+|                    | ABCI_BASE | ABCI_BASE_expt     | ABCI_BASE_tuned_by_expt  |  Colab_BASE_tuned_by_expt  | 
+| :------------------: | :-------------: | :---------------------: | :---------------------------: |  :---------------------------: | 
+| コマンド          | start_BASE_corgi   | start_BASE_expt_corgi | start_abci_tuned_by_expt_corgi   | start_colab_tuned_by_expt_corgi   |
+| 事前学習済みモデル | mT5-small     | mT5-small             | ABCI_BASE              |  Colab_BASE               |             
+| コーパス          | DS_B_BASE.tsv | DS_B_BASE+expt.tsv    | expt.tsv          |  expt.tsv          | 
 
 
