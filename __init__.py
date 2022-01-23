@@ -208,7 +208,7 @@ def start_colab_BASE_corgi(model_id='1Q8kzdDSkQ6_nkjAAjxHYWLvOaYFjnRtO', delay=6
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
-def start_abci_BASE_expt_corgi(model_id='1B6yh8T9FkfPnsjF2NPM5uU5dljnYrH5Q', delay=600, print=print_nop):
+def start_abci_BASE_expt_corgi(model_id='16Dk9BLhk0BN1ZNfogtUXp5f1XeeBUAl9', delay=600, print=print_nop):
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
@@ -216,7 +216,7 @@ def start_colab_BASE_expt_corgi(model_id='1v2Fc7M6l3zTbb_JdDg_YjOmG7qgocIax', de
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
-def start_abci_tuned_by_expt_corgi	(model_id='1yEFafM63OvxwZOzgp1_cgBnlKmBC-Py8', delay=600, print=print_nop):
+def start_abci_tuned_by_expt_corgi	(model_id='1VhTVZoIa6RMGo3KX4fyqpoAO6ZJ7-p9_', delay=600, print=print_nop):
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
