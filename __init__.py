@@ -216,6 +216,6 @@ def start_abci_tuned_by_expt_corgi	(model_id='1yEFafM63OvxwZOzgp1_cgBnlKmBC-Py8'
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
-def start_colab_tuned_by_expt_corgi	(model_id='1ArsBa8HGHGSRDXJifExYXN7zMCLW3egA', delay=600, print=print_nop):
+def start_colab_tuned_by_expt_corgi	(model_id='1ghJkMA9JdY5dd66u0fYCP3HZFDat87jB', delay=600, print=print_nop):
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
