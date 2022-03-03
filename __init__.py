@@ -7,9 +7,6 @@ import json
 import time
 import socket
 
-!apt install file
-!file <location_of_zip_file>
-
 try:
     import IPython
     from google.colab import output
