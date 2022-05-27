@@ -1,6 +1,4 @@
-!pip3 install --upgrade gdown
 import gdown
-
 import os
 try:
     import sentencepiece
