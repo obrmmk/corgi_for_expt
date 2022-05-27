@@ -46,8 +46,9 @@ class NMT(object):
         scores_list = [i[1] for i in pred_list]
         return sentences_list, scores_list
 
-def generate_nmt(model_id='1qZmBK0wHO3OZblH8nabuWrrPXU6JInDc', model_file='./model.zip'):
-    
+def generate_nmt(model_id, model_file='./model.zip'):
+# def generate_nmt(model_id='1qZmBK0wHO3OZblH8nabuWrrPXU6JInDc', model_file='./model.zip'):
+  
     if not os.path.exists(MODEL_DIR):
         GoogleDriveDownloader.download_file_from_google_drive(
             file_id=model_id, dest_path=model_file, unzip=True)
