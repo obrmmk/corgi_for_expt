@@ -1,3 +1,6 @@
+!pip3 install --upgrade gdown
+import gdown
+
 import os
 try:
     import sentencepiece
@@ -50,8 +53,10 @@ def generate_nmt(model_id, model_file='./model.zip'):
 # def generate_nmt(model_id='1qZmBK0wHO3OZblH8nabuWrrPXU6JInDc', model_file='./model.zip'):
   
     if not os.path.exists(MODEL_DIR):
-        GoogleDriveDownloader.download_file_from_google_drive(
-            file_id=model_id, dest_path=model_file, unzip=True)
+            # GoogleDriveDownloader.download_file_from_google_drive(
+            # file_id=model_id, dest_path=model_file, unzip=True)
+            gdown.download(f'https://drive.google.com/uc?id={model_id}','model.zip',quiet=False)
+            !unzip model.zip -d content/model
     nmt = NMT(MODEL_DIR)
 
     def nmt_t5(sentence, beams=5):
