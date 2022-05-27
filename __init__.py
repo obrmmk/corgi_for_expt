@@ -200,30 +200,28 @@ def run_corgi(nmt, delay=600, print=print_nop):
     display(IPython.display.HTML(HTML))
 
 
-def start_abci_BASE_corgi(model_id='1ejyg2VzwA-MbaXANmLALYBUfV4iD3_W1', delay=600, print=print_nop):
+def corgi(model_id, delay=600, print=print_nop):
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
 
-def start_colab_BASE_corgi(model_id='1Q8kzdDSkQ6_nkjAAjxHYWLvOaYFjnRtO', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
+def start_abci_BASE_corgi():
+    corgi(model_id='1ejyg2VzwA-MbaXANmLALYBUfV4iD3_W1')
     
-def start_abci_BASE_expt_corgi(model_id='16Dk9BLhk0BN1ZNfogtUXp5f1XeeBUAl9', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
+def start_colab_BASE_corgi():
+    corgi(model_id='1Q8kzdDSkQ6_nkjAAjxHYWLvOaYFjnRtO')
     
-def start_colab_BASE_expt_corgi(model_id='1v2Fc7M6l3zTbb_JdDg_YjOmG7qgocIax', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
+def start_abci_BASE_expt_corgi():
+    corgi(model_id='16Dk9BLhk0BN1ZNfogtUXp5f1XeeBUAl9')
+
+def start_colab_BASE_expt_corgi():
+    corgi(model_id='1v2Fc7M6l3zTbb_JdDg_YjOmG7qgocIax') 
+
+def start_abci_tuned_by_expt_corgi():
+    corgi(model_id='1VhTVZoIa6RMGo3KX4fyqpoAO6ZJ7-p9_')
+
+def start_colab_tuned_by_expt_corgi():
+    corgi(model_id='1ghJkMA9JdY5dd66u0fYCP3HZFDat87jB')
+
+def start_corgi():
+    corgi(model_id='1nShnUt4gV-X2GCUU2d6A-QhKS0AvrXDA')
     
-def start_abci_tuned_by_expt_corgi(model_id='1VhTVZoIa6RMGo3KX4fyqpoAO6ZJ7-p9_', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
-    
-def start_colab_tuned_by_expt_corgi(model_id='1ghJkMA9JdY5dd66u0fYCP3HZFDat87jB', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
-    
-def start_corgi(model_id='1nShnUt4gV-X2GCUU2d6A-QhKS0AvrXDA', delay=600, print=print_nop):
-    nmt = compose_nmt(generate_nmt(model_id=model_id))
-    run_corgi(nmt, delay=delay, print=print)
