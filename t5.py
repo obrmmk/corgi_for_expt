@@ -1,5 +1,10 @@
 import gdown
 import os
+
+def subpro(command):
+    proc = subprocess.Popen(command)
+    proc.communicate()
+
 try:
     import sentencepiece
 except ModuleNotFoundError:
@@ -54,7 +59,7 @@ def generate_nmt(model_id, model_file='./model.zip'):
             # GoogleDriveDownloader.download_file_from_google_drive(
             # file_id=model_id, dest_path=model_file, unzip=True)
             gdown.download(f'https://drive.google.com/uc?id={model_id}','model.zip',quiet=False)
-            !unzip model.zip -d content/model
+            subpro(['unzip', 'model.zip', '-d', 'content/model'])
     nmt = NMT(MODEL_DIR)
 
     def nmt_t5(sentence, beams=5):
