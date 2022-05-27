@@ -60,11 +60,11 @@ def generate_nmt(model_id, model_file='./model.zip'):
             # GoogleDriveDownloader.download_file_from_google_drive(
             # file_id=model_id, dest_path=model_file, unzip=True)
             gdown.download(f'https://drive.google.com/uc?id={model_id}','model.zip',quiet=False)
-            subpro(['unzip', 'model.zip', '-d', 'content/model'])
+            subpro(['unzip', '/content/model.zip'])
+            
     nmt = NMT(MODEL_DIR)
 
     def nmt_t5(sentence, beams=5):
         pred, prob = nmt.translate_beam(sentence, beams)
         return pred, prob
-
     return nmt_t5
