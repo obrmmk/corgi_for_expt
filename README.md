@@ -1,10 +1,5 @@
 # corgi_for_expt 
 
-### corgiの呼び出し
-```
-from corgi_for_expt import [コマンド] as corgi
-corgi()
-```
 
 ### モデル概要
 |                    | ABCI_BASE | ABCI_BASE_expt     | ABCI_BASE_tuned_by_expt | 
