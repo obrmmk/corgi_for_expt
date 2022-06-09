@@ -1,5 +1,6 @@
 # corgi_for_expt 
 
+日本語toPythonのリアルタイムコード翻訳
 
 ### モデル概要
 |                    | ABCI_BASE | ABCI_BASE_expt     | ABCI_BASE_tuned_by_expt | 
